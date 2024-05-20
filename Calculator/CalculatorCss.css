@@ -1,0 +1,75 @@
+/* Base styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Calculator size */
+.Calci_Size .calculator {
+    width: auto; /* Adjust the width percentage as needed */
+    height: auto; /* Let the height adjust automatically */
+}
+
+
+
+/* Styles for the calculator container */
+.calculator {
+    background: #232121;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 240px;
+}
+
+/* Styles for the display screen */
+#display {
+    font-size: 2em;
+    background: #fff;
+    color: #000;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the buttons area */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Styles for all buttons */
+button {
+    padding: 15px;
+    font-size: 1.21em;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for operator and equal buttons */
+button.operator, #equal {
+    background: #ff9500;
+    color: white;
+}
+
+/* Styles for the "C" button */
+button#clearLast {
+    background: #c4c4c4;
+    color: black;
+}
+
+/* Styles for the "AC" button */
+button#clearAll {
+    background: #c4c4c4;
+    color: rgb(0, 0, 0);
+}
